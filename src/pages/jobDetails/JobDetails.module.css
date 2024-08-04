@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+  background: #ffefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.job_Heading {
+  background: #ffffff;
+  width: 80%;
+  height: 140px;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  font-size: clamp(15px, 5vw, 29px);
+  text-align: center;
+}
+.job_body {
+  width: 80%;
+  padding: 2% 4%;
+  margin: 4% 0;
+  height: fit-content;
+  background: #ffffff;
+}
+
+.top_details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  line-height: 29px;
+  color: #999999;
+}
+.top_details img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.title_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_section h1 {
+  font-size: clamp(30px, 5vw, 40px);
+  font-weight: 700;
+  line-height: clamp(40px, 10vw, 69px);
+}
+.job_location {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ed5353;
+}
+.salary_details {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.salary_details div span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999999;
+}
+.salary_details div h3 {
+  font-size: 18px;
+  color: #999999;
+  line-height: 29px;
+}
+.company_details {
+  margin-top: 20px;
+}
+
+.company_details > h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+}
+.company_details > p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #595959;
+}
+.skills {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.company_details button {
+  width: max-content;
+  padding: 0 20px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+  background: #ffeeee;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 41px;
+  color: #595959;
+}
+
+/* mobile resposnive */
+@media screen and (max-width: 420px) {
+  .job_Heading,
+  .job_body {
+    width: 100%;
+  }
+  .job_Heading {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,81 @@
+.container {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ed5353;
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+}
+
+.auth_section {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.auth_section h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  color: white;
+}
+.btn_section {
+  display: flex;
+  gap: 10px;
+}
+.btn_section button {
+  width: 113px;
+  height: 45px;
+  border-radius: 7px;
+  border: 2px solid white;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.user_accounts {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 10;
+}
+.user_accounts p,
+h2 {
+  font-size: 16px;
+  color: white;
+}
+.user_accounts img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* mobile resposnive */
+@media screen and (max-width: 420px) {
+  .container {
+    height: 80px;
+  }
+  .auth_section h1 {
+    font-size: 25px;
+  }
+  .btn_section button {
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .user_accounts {
+    gap: 7px;
+  }
+  .user_accounts p,
+  h2 {
+    font-size: 13px;
+  }
+  .user_accounts img {
+    width: 30px;
+    height: 30px;
+  }
+}

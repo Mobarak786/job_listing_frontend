@@ -1,0 +1,97 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(16, 16, 16), rgba(141, 60, 45, 0.8));
+}
+.register_container {
+  background-color: white;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  overflow: hidden;
+}
+
+.register {
+  width: 50%;
+  height: 100%;
+  padding: 2% 5%;
+}
+.register h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 58px;
+  color: black;
+}
+.register p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.register form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.register form label input {
+  width: 90%;
+  height: 60px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+.register form label input:focus {
+  font-size: 20px;
+  border: 2px solid #ed5353;
+}
+.register .tandc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 10px;
+  margin-top: 5px;
+
+  font-size: 11px;
+  font-weight: 400;
+}
+.register button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: #ed5353;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.banner {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 420px) {
+  .banner {
+    display: none;
+  }
+  .register_container {
+    width: 100%;
+    height: 100%;
+  }
+  .register {
+    width: 100%;
+    padding: 10% 5%;
+  }
+  .register form label input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .register button {
+    margin-top: 30px;
+  }
+}

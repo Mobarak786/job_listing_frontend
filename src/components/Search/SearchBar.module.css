@@ -1,0 +1,102 @@
+.SearchBar {
+  width: 100%;
+  height: fit-content;
+  padding: 3% 7%;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 22px 4px #ff202040;
+}
+.SearchBox {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid #e3e3e3;
+  border-radius: 7px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.SearchBox input {
+  width: 90%;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9c9c9c;
+}
+.SearchBox:hover {
+  border: 2px solid rgb(228, 86, 61);
+}
+.skill_section {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill_list {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.skill_list select {
+  width: 130px;
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid #cecece;
+  font-size: 15px;
+  text-align: center;
+  color: #9c9c9c;
+}
+.skill_list select option {
+  border: none;
+  text-align: center;
+}
+.skills {
+  width: fit-content;
+  height: 36px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffeeee;
+}
+.skills h1 {
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 10px;
+  text-align: center;
+  color: black;
+}
+.skills button {
+  width: 30px;
+  height: 100%;
+  margin-left: 5px;
+  border-radius: 0 5px 5px 0;
+  background: #ff6b6b;
+  color: white;
+  font-size: 25px;
+}
+.clear_btn {
+  width: 50px;
+  background-color: transparent;
+  color: #ed5353;
+  font: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 420px) {
+  .skill_section {
+    margin-top: 15px;
+  }
+
+  .skill_list {
+    width: 70%;
+  }
+
+  .skill_list select {
+    width: 100px;
+  }
+}
